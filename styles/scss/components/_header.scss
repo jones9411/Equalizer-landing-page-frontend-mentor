@@ -1,0 +1,31 @@
+@use "../abstracts/variables" as *;
+
+header {
+  height: max(600px, 500px);
+  width: 95vw;
+  margin-bottom: 10px;
+  font-family: $FamilyPlexSans;
+
+  .header-container {
+    height: 100%;
+    background-image: url(../../assets/bg-pattern-1.svg);
+    background-repeat: no-repeat;
+    background-position: top 0 right 0;
+    padding: 3.75rem;
+
+    .header-logo {
+      padding: 0 0 4.6875rem 6.25rem;
+    }
+    .header-title {
+      padding: 0 0 1.5625rem 6.25rem;
+      max-width: 56.25rem;
+    }
+    .header-text {
+      padding: 0 0 1.5625rem 6.25rem;
+      max-width: 56.25rem;
+      font-weight: $WeightsNormal;
+      font-size: 1.25rem;
+      line-height: 2.125rem;
+    }
+  }
+}

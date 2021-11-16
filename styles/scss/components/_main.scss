@@ -1,0 +1,82 @@
+@use "../abstracts/variables" as *;
+
+main {
+  height: 980px;
+  width: 95vw;
+  // background-color: blue;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .main-container {
+    .main-background {
+      height: 600px;
+      width: max(1100px, 996px);
+      border-radius: 12px;
+      background-color: $black;
+      background-image: url(../../assets/bg-pattern-2.svg);
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+
+    .main-image {
+      width: 312px;
+      height: 642px;
+      position: absolute;
+      top: 550px;
+      left: 275px;
+    }
+
+    .main-price-component {
+      width: 446px;
+      height: 625px;
+      padding: 42px;
+      color: $white;
+      border-radius: 12px;
+      background-color: $orange;
+      position: absolute;
+      top: 950px;
+      right: 225px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      h2 {
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 3.25rem;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 2.125rem;
+      }
+
+      .main-price-sub-heading {
+        display: flex;
+        align-items: center;
+      }
+
+      .main-buttons {
+        .bgt {
+          margin-bottom: 10px;
+          border: none;
+          font-weight: 700;
+          font-size: 1.125rem;
+        }
+        .ios {
+          background-color: $black;
+          color: $white;
+        }
+        .ios:hover {
+          background-color: $lightBlue;
+        }
+        .android:hover {
+          background-color: $yellow;
+        }
+      }
+    }
+  }
+}

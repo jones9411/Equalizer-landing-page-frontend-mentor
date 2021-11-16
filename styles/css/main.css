@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: " IBM Plex Sans";
+}
+
+body {
+  background-image: url(../../assets/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 5.5rem;
+  font-weight: 700;
+  line-height: 5.5rem;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+}
+
+button {
+  width: 333px;
+  height: 61px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+header {
+  height: max(600px, 500px);
+  width: 95vw;
+  margin-bottom: 10px;
+  font-family: " IBM Plex Sans";
+}
+header .header-container {
+  height: 100%;
+  background-image: url(../../assets/bg-pattern-1.svg);
+  background-repeat: no-repeat;
+  background-position: top 0 right 0;
+  padding: 3.75rem;
+}
+header .header-container .header-logo {
+  padding: 0 0 4.6875rem 6.25rem;
+}
+header .header-container .header-title {
+  padding: 0 0 1.5625rem 6.25rem;
+  max-width: 56.25rem;
+}
+header .header-container .header-text {
+  padding: 0 0 1.5625rem 6.25rem;
+  max-width: 56.25rem;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 2.125rem;
+}
+
+main {
+  height: 980px;
+  width: 95vw;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .main-container .main-background {
+  height: 600px;
+  width: max(1100px, 996px);
+  border-radius: 12px;
+  background-color: #191826;
+  background-image: url(../../assets/bg-pattern-2.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+main .main-container .main-image {
+  width: 312px;
+  height: 642px;
+  position: absolute;
+  top: 550px;
+  left: 275px;
+}
+main .main-container .main-price-component {
+  width: 446px;
+  height: 625px;
+  padding: 42px;
+  color: #fcfaf9;
+  border-radius: 12px;
+  background-color: #fa7453;
+  position: absolute;
+  top: 950px;
+  right: 225px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main .main-container .main-price-component h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+}
+main .main-container .main-price-component p {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 2.125rem;
+}
+main .main-container .main-price-component .main-price-sub-heading {
+  display: flex;
+  align-items: center;
+}
+main .main-container .main-price-component .main-buttons .bgt {
+  margin-bottom: 10px;
+  border: none;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+main .main-container .main-price-component .main-buttons .ios {
+  background-color: #191826;
+  color: #fcfaf9;
+}
+main .main-container .main-price-component .main-buttons .ios:hover {
+  background-color: #66e2dc;
+}
+main .main-container .main-price-component .main-buttons .android:hover {
+  background-color: #ffb964;
+}
+
+footer {
+  height: 230px;
+  width: 95vw;
+  padding: 3.75rem;
+  display: flex;
+}
+footer .footer-content {
+  width: 65%;
+  display: flex;
+  justify-content: space-around;
+}
+footer .footer-content .footer-logo {
+  height: 2.5rem;
+}
+footer .footer-content .footer-text {
+  max-width: 350px;
+}
+footer .footer-content .footer-text p {
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+footer .footer-social {
+  margin-left: auto;
+  align-self: center;
+}
+footer .footer-social .fab {
+  font-size: 1.5rem;
+  margin: 0 17px;
+}
+
+@media screen and (max-width: 1040px) {
+  body {
+    background-image: url(../../../assets/bg-main-tablet.png);
+  }
+
+  header {
+    height: max(600px, 500px);
+    width: 100vw;
+  }
+  header .header-container {
+    height: 100%;
+    background-image: url(../../assets/bg-pattern-1.svg);
+    background-repeat: no-repeat;
+    background-position: top right -45px;
+    padding: 1.75rem;
+  }
+  header .header-container .header-logo {
+    padding: 1rem 0 2.6875rem 3.25rem;
+  }
+  header .header-container .header-title {
+    padding: 0 0 1.5625rem 3.25rem;
+    max-width: 30.25rem;
+    font-size: 3.25rem;
+    line-height: 3.25rem;
+  }
+  header .header-container .header-text {
+    padding: 0 0 1.5625rem 3.25rem;
+    max-width: 30.25rem;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  main {
+    height: 980px;
+    width: 100vw;
+  }
+  main .main-container .main-background {
+    height: 600px;
+    width: 690px;
+    border-radius: 12px;
+    background-color: #191826;
+  }
+  main .main-container .main-image {
+    width: 270px;
+    height: 550px;
+    top: 650px;
+    left: 65px;
+  }
+  main .main-container .main-price-component {
+    z-index: 10;
+    width: 400px;
+    height: 625px;
+    padding: 42px;
+    top: 975px;
+    right: 95px;
+  }
+
+  footer {
+    height: 280px;
+    width: 95vw;
+    padding: 2.75rem;
+  }
+  footer .footer-content {
+    flex-direction: column;
+  }
+  footer .footer-content .footer-logo {
+    height: 2.5rem;
+    width: 9.5rem;
+  }
+
+  .footer-social {
+    margin-left: auto;
+    align-self: center;
+  }
+  .footer-social .fab {
+    font-size: 1.5rem;
+    margin: 0 17px;
+  }
+}
+@media screen and (max-width: 550px) {
+  body {
+    background-image: url(../../assets/bg-main-mobile.png);
+    background-position: top center;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 5.5rem;
+    letter-spacing: -1px;
+  }
+
+  button {
+    width: 233px;
+    height: 61px;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+
+  header {
+    height: max(600px, 500px);
+    width: 100vw;
+  }
+  header .header-container {
+    height: 100%;
+    background-image: none;
+    padding: 1.75rem;
+  }
+  header .header-container .header-logo {
+    padding: 1rem 0 2.6875rem 2rem;
+  }
+  header .header-container .header-title {
+    padding: 0 0 1.5625rem 2rem;
+    max-width: 30.25rem;
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+  }
+  header .header-container .header-text {
+    padding: 0 0 1.5625rem 2rem;
+    max-width: 30.25rem;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+
+  main {
+    height: 1004px;
+    width: 95vw;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  main .main-container .main-background {
+    height: 600px;
+    width: 100vw;
+    border-radius: 12px;
+    background-color: #191826;
+  }
+  main .main-container .main-image {
+    width: 208px;
+    height: 430px;
+    top: 475px;
+    left: 60px;
+  }
+  main .main-container .main-price-component {
+    z-index: 10;
+    width: 100%;
+    height: 545px;
+    padding: 42px;
+    top: 975px;
+    right: 0;
+  }
+
+  footer {
+    height: 280px;
+    width: 95vw;
+    padding: 0 35px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  footer .footer-content {
+    flex-direction: column;
+  }
+  footer .footer-content .footer-logo {
+    height: 2.5rem;
+    width: 9.5rem;
+  }
+
+  .footer-social {
+    margin-right: auto;
+    align-self: flex-start;
+  }
+  .footer-social .fab {
+    font-size: 1.5rem;
+    margin: 0 17px;
+  }
+}/*# sourceMappingURL=main.css.map */
